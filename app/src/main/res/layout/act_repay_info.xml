@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="NewApi">
+
+    <data>
+
+        <variable
+            name="clickListener"
+            type="android.view.View.OnClickListener" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color5"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        tools:context=".ui.activity.loan.LoanDetailActivity">
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/white"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5dp"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:onClick="@{clickListener}"
+                android:padding="12dp"
+                android:src="@mipmap/ic_back" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/loan_detail"
+                android:textColor="@color/black"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scrollbars="none"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/loan_amount"
+                        android:textColor="@color/text_color6"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/tv_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:text="₹0"
+                        android:textColor="@color/text_yellow"
+                        android:textSize="36sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@color/background_color1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/application_date"
+                        android:textColor="@color/text_color6"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/tv_app_date"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="20dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:text="-- -- --"
+                        android:textColor="@color/text_color6"
+                        android:textColorHint="@color/text_color2"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@color/background_color1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/disbursal_bank"
+                        android:textColor="@color/text_color6"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/tv_disbursal_bank"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="20dp"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical|right"
+                        android:singleLine="true"
+                        android:text="-- -- --"
+                        android:textColor="@color/text_color6"
+                        android:textColorHint="@color/text_color2"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@color/background_color1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/account_no"
+                        android:textColor="@color/text_color6"
+                        android:textSize="17sp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_account_no"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="20dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:text="**** **** **** ****"
+                        android:textColor="@color/text_color6"
+                        android:textColorHint="@color/text_color2"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/repayment"
+                        android:textColor="@color/text_color6"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/tv_repayment_money"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="20dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:text="₹0"
+                        android:textColor="@color/text_color6"
+                        android:textColorHint="@color/text_color2"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@color/background_color1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/due_date"
+                        android:textColor="@color/text_color6"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/tv_due_date"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="20dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:text="-- -- --"
+                        android:textColor="@color/text_color6"
+                        android:textColorHint="@color/text_color2"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="15dp"
+                    android:visibility="gone"
+                    android:paddingEnd="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/actual_repayment"
+                        android:textColor="@color/text_color6"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/tv_actual_repayment_money"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="20dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:text="₹0"
+                        android:textColor="@color/text_color6"
+                        android:textColorHint="@color/text_color2"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="15dp"
+                    android:visibility="gone"
+                    android:background="@color/background_color1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="15dp"
+                    android:visibility="gone"
+                    android:paddingEnd="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/actual_due_date"
+                        android:textColor="@color/text_color6"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/tv_actual_due_date"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="20dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:text="-- -- --"
+                        android:textColor="@color/text_color6"
+                        android:textColorHint="@color/text_color2"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sanction_letter"
+                        android:textColor="@color/text_color6"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/tv_check"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="20dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:onClick="@{clickListener}"
+                        android:text="Check"
+                        android:textColor="@color/colorAccent"
+                        android:textColorHint="@color/text_color2"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_invoice"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Invoice"
+                        android:textColor="@color/text_color6"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/tv_invoice"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="20dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:onClick="@{clickListener}"
+                        android:text="Download"
+                        android:textColor="@color/colorAccent"
+                        android:textColorHint="@color/text_color2"
+                        android:textSize="17sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

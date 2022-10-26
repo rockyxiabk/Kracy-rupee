@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="clickListener"
+            type="android.view.View.OnClickListener" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:fitsSystemWindows="true"
+        tools:context="com.great.cash.rupee.module.user.InputNumberActivity">
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/app_name"
+                android:textColor="@color/black"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_get_phone_des"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="43dp"
+            android:gravity="center_vertical"
+            android:lineSpacingMultiplier="1.2"
+            android:text="@string/get_phone_des"
+            android:textColor="@color/text_color4"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+        <LinearLayout
+            android:id="@+id/ll_input_phone"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="43dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/tv_get_phone_des">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/phone" />
+
+            <EditText
+                android:id="@+id/et_input_phone"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="15dp"
+                android:layout_weight="1"
+                android:background="@drawable/et_input_shape"
+                android:gravity="center_vertical"
+                android:hint="@string/phone_number"
+                android:inputType="number"
+                android:lines="1"
+                android:maxLength="10"
+                android:textColor="@color/text_color2"
+                android:textColorHint="@color/text_color3"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="43dp"
+            android:layout_marginEnd="43dp"
+            android:background="@color/text_color3"
+            app:layout_constraintTop_toBottomOf="@id/ll_input_phone" />
+
+        <ImageView
+            android:id="@+id/iv_tixing"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="25dp"
+            android:src="@mipmap/tixing"
+            app:layout_constraintStart_toStartOf="@id/line"
+            app:layout_constraintTop_toTopOf="@id/line" />
+
+        <TextView
+            android:id="@+id/tv_get_phone_hint"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="43dp"
+            android:gravity="center_vertical"
+            android:lineSpacingMultiplier="1.2"
+            android:paddingTop="10dp"
+            android:paddingEnd="15dp"
+            android:paddingBottom="10dp"
+            android:text="@string/get_phone_hint"
+            android:textColor="@color/text_color2"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/iv_tixing"
+            app:layout_constraintTop_toTopOf="@id/line" />
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="43dp"
+            android:background="@drawable/btn1_se"
+            android:enabled="false"
+            android:onClick="@{clickListener}"
+            android:text="@string/continue_"
+            android:textColor="@drawable/text_color_selector"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_get_phone_hint" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

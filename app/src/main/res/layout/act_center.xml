@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="clickListener"
+            type="android.view.View.OnClickListener" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:ignore="NewApi">
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5dp"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:onClick="@{clickListener}"
+                android:padding="12dp"
+                android:src="@mipmap/ic_back" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Identity Verification"
+                android:textColor="@color/black"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/background_color1" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_credit"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/shape_round_bg"
+                android:gravity="center_vertical"
+                android:onClick="@{clickListener}"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/ic" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="Identity Certification"
+                    android:textColor="@color/text_color4"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/iv_name"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@mipmap/tixing" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_auth_right_indicator" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_base_info"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/shape_round_bg"
+                android:gravity="center_vertical"
+                android:onClick="@{clickListener}"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/pi" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="Personal Information"
+                    android:textColor="@color/text_color4"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/iv_info"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@mipmap/tixing" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@mipmap/ic_auth_right_indicator" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_reference"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/shape_round_bg"
+                android:gravity="center_vertical"
+                android:onClick="@{clickListener}"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/rc" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="Reference Contacts"
+                    android:textColor="@color/text_color4"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/iv_reference"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@mipmap/tixing" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@mipmap/ic_auth_right_indicator" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_bank"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/shape_round_bg"
+                android:gravity="center_vertical"
+                android:onClick="@{clickListener}"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/bai" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="Bank Account"
+                    android:textColor="@color/text_color4"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/iv_bank"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@mipmap/tixing" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@mipmap/ic_auth_right_indicator" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:lineSpacingExtra="5dp"
+                android:text="You can apply for a loan after completing the above information."
+                android:textColor="@color/text_color6"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

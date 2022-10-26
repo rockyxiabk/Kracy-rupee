@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6E85FF</color>
+    <color name="colorPrimaryDark">#6E85FF</color>
+    <color name="colorAccent">#ffb400</color>
+
+    <color name="text_start_color">#3999FB</color>
+    <color name="text_end_color">#3999FB</color>
+
+    <color name="btn_custom_color">#1D61FF</color>
+    <color name="btn_touch_color">#3999FB</color>
+    <color name="btn_un_touch_color">#FFDDDDDD</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="selector_color">#6E85FF</color>
+    <color name="normal_color">#999999</color>
+
+    <color name="background_color0">#fff9f7f4</color>
+    <color name="background_color1">#FFDDDDDD</color>
+    <color name="bg_color4">#F8F8F8</color>
+    <color name="bg_color5">#F0F4FC</color>
+    <color name="bg_seek_bar_progress">#FFBF35</color>
+
+    <color name="text_color1">#FF4749A0</color>
+    <color name="text_color2">#5E5E5E</color>
+    <color name="text_color3">#FF999999</color>
+    <color name="text_color4">#333333</color>
+    <color name="text_color5">#FFBCBCBC</color>
+    <color name="text_color6">#FF333333</color>
+    <color name="text_color7">#FF969696</color>
+    <color name="text_color8">#FFBF35</color>
+    <color name="text_color9">#FFDDDDDD</color>
+    <color name="text_color10">#FFD195</color>
+    <color name="text_color11">#F9B66B</color>
+    <color name="text_color12">#F87884</color>
+    <color name="text_orange">#FFA810</color>
+    <color name="text_error">#FF6767</color>
+    <color name="text_repay">#FD4087</color>
+    <color name="text_grey">#666666</color>
+    <color name="text_repay_done">#5ECB7C</color>
+    <color name="text_yellow">#ffb400</color>
+
+    <color name="divider_line">#DEDEDE</color>
+
+    <color name="progress_default_color">#b1000000</color>
+    <color name="progress_grey_color">#449E9E9E</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="white_80">#CCFFFFFF</color>
+    <color name="black">#000000</color>
+</resources>

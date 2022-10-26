@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/shape_toop_round_bg"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="Select Your IFSC"
+            android:textColor="@color/text_color4"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"
+            android:text="Have chosen"
+            android:textColor="@color/text_yellow"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_data1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:textColor="@color/text_color4"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_data2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:textColor="@color/text_color4"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_data3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:textColor="@color/text_color4"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:text="Select Bank"
+            android:textColor="@color/text_yellow"
+            android:textSize="14sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_code"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:overScrollMode="never" />
+    </LinearLayout>
+</layout>

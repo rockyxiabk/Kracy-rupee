@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="permission_title_list">
+        <item>SMS</item>
+        <item>Contacts list</item>
+        <item>Installed Applications</item>
+        <item>Storage</item>
+        <item>Location</item>
+        <item>Camera</item>
+        <item>Phone State</item>
+        <item><![CDATA[MEDIA & PHOTOS & FILES]]></item>
+        <item>Third party accounts</item>
+        <item>LINK TO SDK</item>
+    </string-array>
+    <string-array name="permission_desc_list">
+        <item>FiWallet will upload and transmit your SMS data including sender name, date, trade description, information，and amount from your phone to https://sdk.greaterupee.in. SMS will be used to manage risks and conduct anti-fraud checks. Forpay will never share data to the third party without your permission. The information will only be collected if you consent to the authorization. The data will transfer and upload over a secure connection(https)</item>
+        <item>FiWallet will upload and transmit your contact list data including phone number and name from your phone to https://sdk.greaterupee.in. The uploaded and transmitted phone number and name will be used to manage risks and conduct anti-fraud checks. While using the App, it periodically sends contact list data to our server. Forpay will never share data to the third party without your permission. The information will only be collected if you consent to the authorization. The data will transfer and upload over a secure connection(https)</item>
+        <item>We will get a list of installed applications data information, including application name,package name, installation time,update time, version name and version code of each installed application on the device to evaluate your credit and enrich your personal data with pre approved custom loan offers.</item>
+        <item>This permission is required so that users loan account statements can be securely downloaded and saved on users phone, and so that user can upload the right documents for a faster approval and disbursal of the loan. Also, this helps provide a very smooth seamless experience while using the app.</item>
+        <item>User location helps to locate and verify the address which helps in making better credit risk decisions and fasten the Know Your Customer (KYC) process.</item>
+        <item>Camera access is required so that user can easily scan or capture identity documents, etc. and save time by allowing us to auto-fill the required data and helps in improving the user journey and experience.</item>
+        <item>Collect and monitor specific information about your phone like your phone’s unique device identifier, user profile information as this information helps us in uniquely identifying a user, so that we can detect and prevent any unauthorized device from acting on your behalf. This enables us to detect fraud and manage risks better.</item>
+        <item>We require the media, photos, and files permission that allows the App to enable you to upload photos or documents to complete the application form during your loan application journey.</item>
+        <item>We collect and monitor the list of accounts configured in the device to verify the information, such as your email address and basic profile details, provided by you. This also helps us to enrich your profile information and provide you with pre-approved customized loan offers.</item>
+        <item>If you give the permission, the information including SMS, Contact list, Installed Applications, Camera, Location, Phone State. All these information will be collected and use for credit risk and recommend the products. All these information we collected will be stored in the cloud service with high level protection and never be shared with any third parties.</item>
+
+    </string-array>
+</resources>

@@ -1,0 +1,4 @@
+include ':app'
+include ':liveness'
+rootProject.name = "FiWallet"
+include ':NewData'

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1015691762552",
+    "project_id": "fiwallet-10fe8",
+    "storage_bucket": "fiwallet-10fe8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1015691762552:android:0cd0b9dfdd9a564b7e468d",
+        "android_client_info": {
+          "package_name": "com.great.cash.rupee"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1015691762552-bcejk1r1p8ncrfqc55grn933ospdq6gl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.great.cash.rupee",
+            "certificate_hash": "796c99ba118eab5da097f3c646b94d654fdb62fb"
+          }
+        },
+        {
+          "client_id": "1015691762552-iss713cch7s1ev2lk08prn0ca96sq46d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBk1Rph9bADeFx1sI-tF59E1vNyUnW7rfE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1015691762552-iss713cch7s1ev2lk08prn0ca96sq46d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

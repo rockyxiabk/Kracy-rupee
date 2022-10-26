@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FiWallet</string>
+
+    <string name="home">HOME</string>
+    <string name="me">ME</string>
+
+    <string name="get_phone_des">Please provide your mobile number,if you have already registered, kindly enter that one</string>
+    <string name="get_phone_hint">Please register with the mobile number which is linked to your Aadhaar number to enable KYC and eSign</string>
+    <string name="login">Login</string>
+    <string name="login_welcome">Welcome to FiWallet</string>
+    <string name="login_">LOGIN</string>
+    <string name="enter_pwd_hint">Please enter your password</string>
+    <string name="forget_pwd">forget password?</string>
+    <string name="register">Register</string>
+    <string name="get">GET</string>
+    <string name="agreement">I have read and agreed to the 《Terms of Use》 &amp; 《Privacy Policy》</string>
+    <string name="enter_code_hint">Please enter OTP</string>
+    <string name="set_login_pwd">Set Login Password</string>
+    <string name="retry_pwd">Retrieve Password</string>
+    <string name="pwd_change_success">The Password Has Been Changed!</string>
+    <string name="mine_settings_idea">Please enter your feedback or suggestions, we will continue to optimize the app…</string>
+
+    <string name="back">back</string>
+    <string name="continue_">CONTINUE</string>
+    <string name="submit">SUBMIT</string>
+
+    <string name="phone_number">Phone Number</string>
+    <string name="login_register">Login/Register</string>
+    <string name="hello">Hello</string>
+
+    <string name="certification_center_">Certification \nCenter</string>
+    <string name="help_center">Help Center</string>
+
+    <string name="reference_contacts">Reference Contacts</string>
+    <string name="select_family_member">Select Family Member</string>
+    <string name="select_name">His or her Name</string>
+    <string name="phone_no">Phone No.</string>
+    <string name="friends_references">FRIENDS\' REFERENCES</string>
+    <string name="friend_name">Friend\'s Name</string>
+    <string name="pan_no">Pan No.</string>
+    <string name="name">Name</string>
+    <string name="aadhaar_no">Aadhaar No.</string>
+    <string name="data_birth">Data Of Birth</string>
+    <string name="gender">Gender</string>
+    <string name="pin_code">PinCode</string>
+    <string name="click_here">Click Here</string>
+
+    <string name="bank_account_information">Bank Account Information</string>
+    <string name="ifsc_code">IFSC Code</string>
+    <string name="please_choose">Please choose or enter</string>
+    <string name="confirm_account_number">Confirm Account Number</string>
+
+    <string name="apply_now">APPLY NOW</string>
+    <string name="certification_des">You can apply for a loan after completing \nthe above information.</string>
+    <string name="family_contacts">FAMILY CONTACTS</string>
+
+    <string name="about">About</string>
+    <string name="about_us">About Us</string>
+    <string name="app_name_">App Name</string>
+    <string name="version_name">Version Name</string>
+
+    <string name="password">Change Login Password</string>
+    <string name="account_number">Account number</string>
+    <string name="old_pwd_hint">Enter the original password</string>
+    <string name="set_new_pwd_hint">Set new password</string>
+    <string name="confirm_new_pwd_hint">Confirm new password</string>
+
+    <string name="quit">Quit</string>
+    <string name="logout_account_tips">Are you sure exit Account?</string>
+    <string name="exit_login">Exit Login Success</string>
+
+    <string name="permissions">App Permissions</string>
+    <string name="hi_there">Hi. there</string>
+    <string name="permission_des">We need the following permissions to assess your risk and ease the loan application process</string>
+    <string name="permission_failed">Sorry, you did not accept a permission. In order to use the app better, now go to the "Settings" page to open the corresponding permission?</string>
+
+    <string name="ok_go">OK,LET\'S GO</string>
+    <string name="ok_go_des">By continuing you agree to our Terms of Service &amp; Privacy Policy and receive communication from FiWallet via SMS and E-mail</string>
+    <string name="home_paying">You will receive you loan within \n 24 hours in your bank</string>
+    <string name="home_apply">APPLY</string>
+    <string name="details">Details</string>
+
+    <string name="exit_app_tips">Press again to exit the app</string>
+    <string name="loan_application">Loan Application</string>
+    <string name="loan_agreement">I have read and agreed to the </string>
+    <string name="loan_amount">Loan Amount</string>
+    <string name="tenure">Tenure</string>
+    <string name="received">Received</string>
+    <string name="progress">Progress</string>
+    <string name="repayment">Repayment</string>
+    <string name="application_date">Application Date</string>
+    <string name="due_date">Due Date</string>
+    <string name="disbursal_bank">Disbursal Bank</string>
+    <string name="account_no">Account No</string>
+    <string name="no_applied_records">NO APPLIED RECORDS</string>
+    <string name="loan_detail">LOAN DETAILS</string>
+    <string name="sanction_letter">Sanction Letter</string>
+    <string name="actual_repayment">Actual Repayment</string>
+    <string name="actual_due_date">Actual Due Date</string>
+
+    <string name="pay_success">Repayment Successful</string>
+    <string name="pay_error">Transaction error</string>
+    <string name="pay_success_tips">Enjoy the better credit score! Looking forward to providing service for you again!</string>
+    <string name="pay_error_tips">Please Try Again</string>
+    <string name="ok">OK</string>
+    <string name="loan_record">Loan Record</string>
+    <string name="interest_fee">Interest Fee</string>
+    <string name="interest_fee_tips">A nominal interest will be charged on per day basis depending upon the loan duration and amount.</string>
+    <string name="processing_fee">Processing Fee</string>
+    <string name="processing_fee_tips">Including but not limited to: Bank charges,adiministrative charges for processing the loan application. The same would be deducted from the Loan Amount.</string>
+    <string name="assessment_fee">Assessment Fee</string>
+    <string name="assessment_fee_tips">It includes the borrowers credit check and background evaluation.These charges would be deducted from the loan amount.</string>
+    <string name="confirm_tips">After approval, the loan will be transferred to the receiving bank card</string>
+
+</resources>

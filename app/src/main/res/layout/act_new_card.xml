@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="NewApi">
+
+    <data>
+
+        <variable
+            name="clickListener"
+            type="android.view.View.OnClickListener" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5dp"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:onClick="@{clickListener}"
+                android:padding="12dp"
+                android:src="@mipmap/ic_back" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Bank Account Information"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/background_color1" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_below="@id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:background="@color/white"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:id="@+id/tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="IFSC Code"
+                    android:textColor="@color/text_color4"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/tv_ifc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/tv"
+                    android:layout_alignParentRight="true"
+                    android:onClick="@{clickListener}"
+                    android:text="Don\'t remember your IFSC?"
+                    android:textColor="@color/text_yellow"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/ed_ifsc"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/tv"
+                    android:layout_toLeftOf="@id/tv_ifc"
+                    android:background="@null"
+                    android:digits="qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM0123456789"
+                    android:gravity="center_vertical"
+                    android:hint="Please enter"
+                    android:maxLength="11"
+                    android:textColor="@color/text_grey"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/background_color1" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:background="@color/white"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:id="@+id/tv_bank_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Account Number"
+                    android:textColor="@color/text_color4"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/ed_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/tv_bank_num"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="Please enter"
+                    android:inputType="number"
+                    android:maxLength="18"
+                    android:textColor="@color/text_grey"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/background_color1" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:background="@color/white"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:id="@+id/tv_bank_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Confirm Account Number"
+                    android:textColor="@color/text_color4"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/ed_re_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/tv_bank_account"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="Please enter again"
+                    android:inputType="number"
+                    android:maxLength="18"
+                    android:textColor="@color/text_grey"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/background_color1" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/btn1_se"
+            android:gravity="center"
+            android:onClick="@{clickListener}"
+            android:text="SUBMIT"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+    </RelativeLayout>
+</layout>

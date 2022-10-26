@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/shape_round_bg"
+    android:paddingTop="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/tv_product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/iv_logo"
+        android:textStyle="bold"
+        android:textColor="@color/text_color4" />
+
+    <LinearLayout
+        android:id="@+id/ll_range"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_below="@id/iv_logo"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_range"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fffa303d"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loan range"
+            android:textColor="#ffbcbcbc"
+            android:textSize="12sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_alignTop="@id/ll_range"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_below="@id/iv_logo"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_interest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff4b4e54"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Interest"
+            android:textColor="#ffb9b9b9"
+            android:textSize="12sp" />
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_apply"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:text="Apply"
+        android:textColor="@color/white"
+        android:background="@drawable/apply_bg"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>
